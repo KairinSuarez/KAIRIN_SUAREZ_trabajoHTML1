@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicita un Presupuesto</title>
+     <!-- FAVICON -->
+     <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2">
+     <!-- CCS -->
+     <link rel="stylesheet" href="/css/style.css">
+
+     <!-- BIBLIOTECA PARA ICONOS DE REDES-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- BIBLIOTECA DE FUENTES DE GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Emilys+Candy&family=Fleur+De+Leah&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+ 
+    <header>
+        <!-- LOGO-->
+        <h1><img src="./../assets/img/LOGO.png" alt="LOGO" id="logoinicio" width="500" height="500"></h1>
+        <hr>
+
+        <!-- Menu de navegacion por la web-->
+        <div>
+            <nav class="navigationbar">
+                <ul class="navigationbarlist">
+                    <li> <a class="enlace active" href="./../index.html">INICIO</a></li>
+                    <li> <a class="enlace active" href="./portfolio.html">GALERIA</a></li>
+                    <li> <a class="enlace active" href="./Sesiones.html">REPORTAJES</a></li>
+                    <li> <a class="enlace1 active" href="./Presupuesto.html">PRECIOS</a></li>
+                    <li> <a class="enlace active" href="./Contacto.html">CONTACTO</a></li>
+                    <li> <a class="enlace active" href="./../assets/pdf/consentimiento-imagenes-menores.pdf" target="_blank">CONSENTIMIENTOS</a>  </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- fin menu de navegacion-->
+        
+    </header>
+
+    <!-- Texto informativo-->
+     
+    <H2 class="formcontact">Solicita un Presupuesto</H2>
+    <p class="formcontact2">Rellena el siguiente formulario con tus datos para enviarte toda la información</p>
+    
+    <!-- MAIN -->
+
+    <!-- INICIO DEL FORMULARIO-->
+
+    <div class="container">
+        <form id="myform" name="myform" action="#" method="post">
+
+        <!-- datos personales-->    
+
+        <h4 class="legend">Datos personales</h4>
+        <div class="form">
+
+            <!--nombre-->
+            <label for="nombre">Nombre</label> 
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required pattern="[a-zA-Z ñÑ]+">
+        </div>
+                 
+        <div class="form">
+            <!--telefono-->
+            <label for="tel">Telefono</label>
+            <input type="text" name="telefono" id="tel" placeholder="+34" required pattern="[0-9]{9}">
+        </div>  
+                 
+        <div class="form">
+            <!-- Correo Electronico-->
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="example@gmail.com" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}">
+        </div>
+                                                                                    
+            
+        <h4 class="legend">Sobre la sesion</h4>
+
+         <!-- Solicitud de comentarios-->    
+
+        <label class="coment" for="comentario">Comentarios</label>
+        <textarea name="comentario" id="comentario" cols="35" rows="7" placeholder="Coloca información que consideres importante para tu sesion"></textarea>
+        
+        <!--Politica de Privacidad-->
+
+        <div>
+            <p class="politica"> He leido y Acepto La <a href="/assets/pdf/Politica_Privacidad.pdf">Politica de Privacidad</a> <input type="checkbox" name="politica" value="politica" id="politica" required> </p>
+        </div>
+                
+        <!-- creamos botones de enviar y borrar-->
+
+        <input type="submit">
+        <input type="reset" value="Borar">
+
+        </form>
+
+      <!-- FIN DEL FORMULARIO-->
+
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <p class="namefooter">&copy;2025 EL ESTUDIO DE KAI C.A.</p>
+            <nav>
+                <ul class="footerlist">
+                    <li><a href="#">F & Q</a></li>
+                    <li><a href="/views/Contacto.html">Contacto</a></li>
+                    <li><a href="/assets/pdf/Politica_Privacidad.pdf">Aviso Legal</a></li>
+                </ul>
+            </nav>
+
+            <!-- Iconos redes sociales-->
+
+            <div class="redes">
+                <ul>
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="Instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+    </footer> 
+   
+</body>
+
+<!--FIN-->
+
+</html>
